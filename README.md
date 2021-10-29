@@ -1,4 +1,5 @@
-## Cut-Thumbnail(Accepted at ACM MULTIMEDIA 2021)
+## Cut-Thumbnail (Accepted at ACM MULTIMEDIA 2021)
+
 **[Tianshu Xie](mailto:tianshuxie@std.uestc.edu.cn), [Xuan Cheng](mailto:cs_xuancheng@uestc.edu.cn), Xiaomin Wang, 
 Minghui Liu, Jiali Deng, Tao Zhou, Ming Liu**
 ---------------------
@@ -12,10 +13,10 @@ This implementation is based on these repositories:
 
 ### Main Requirements
 - torch == 1.0.1
-- torch == 0.2.0
+- torchvision == 0.2.0
 - Python 3
 
-## Training Examples
+### Training Examples
 - Mixed Single Thumbnail
 ```
 python train.py -d [datasetlocation] --depth 50 --mode mst --size 112 --lam 0.25 --participation_rate 0.8
@@ -25,7 +26,35 @@ python train.py -d [datasetlocation] --depth 50 --mode mst --size 112 --lam 0.25
 python train.py -d [datasetlocation] --depth 50 --mode st --size 112 --lam 0.25 --participation_rate 0.8
 ```
 
-## Citation
+### Results
+- ImageNet Results
+
+| Model | Accuracy (%) |
+| :---- | ----: |
+|ResNet-50 + CutMix | [78.60](https://arxiv.org/abs/1905.04899)* |
+|ResNet50 + Cut-Thumbnail (ST)| 77.74|
+|ResNet50 + **Cut-Thumbnail (MST)**|**79.21**|
+
+\* denotes results reported in the original papers.
+
+- CIFAR100 Results
+
+| Model | Accuracy (%) | 
+| :---- | ----: |
+|WideResNet-28-10 + Cut-Thumbnail (ST)| 81.41|
+|WideResNet-28-10 + **Cut-Thumbnail (MST)**| **83.35**|
+
+- CUB-200-2011 Results
+
+| Model | Accuracy (%) | 
+| :---- | ----: |
+|ResNet50 + Cut-Thumbnail (ST)| 85.72|
+|ResNet50 + Cut-Thumbnail (MST)| 86.56|
+|ResNet50 + **Cut-Thumbnail (MDT)**| **86.72**|
+
+
+
+### Citation
 If you find our paper and this repo useful, please cite as
 ```
 @inproceedings{xie20cut-thumbnail,
