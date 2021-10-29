@@ -37,7 +37,7 @@ python train.py -d [datasetlocation] --depth 50 --mode st --size 112 --lam 0.25 
 
 \* denotes results reported in the original papers.
 
-- CIFAR100 Results
+- CIFAR-100 Results
 
 | Model | Accuracy (%) | 
 | :---- | ----: |
