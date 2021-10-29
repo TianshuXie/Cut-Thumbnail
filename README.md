@@ -31,7 +31,7 @@ python train.py -d [datasetlocation] --depth 50 --mode st --size 112 --lam 0.25 
 
 | Model | Accuracy (%) |
 | :---- | ----: |
-|ResNet-50 + CutMix | [78.60](https://arxiv.org/abs/1905.04899)* |
+|ResNet50 + CutMix | [78.60](https://arxiv.org/abs/1905.04899)* |
 |ResNet50 + Cut-Thumbnail (ST)| 77.74|
 |ResNet50 + **Cut-Thumbnail (MST)**|**79.21**|
 
