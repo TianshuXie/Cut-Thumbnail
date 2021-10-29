@@ -20,7 +20,7 @@ This implementation is based on these repositories:
 ```
 python train.py -d [datasetlocation] --depth 50 --mode mst --size 112 --lam 0.25 --participation_rate 0.8
 ```
-- Single Thumbnail
+- Self Thumbnail
 ```
 python train.py -d [datasetlocation] --depth 50 --mode st --size 112 --lam 0.25 --participation_rate 0.8
 ```
